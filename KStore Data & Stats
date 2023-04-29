@@ -1,0 +1,28 @@
+-- Create store database
+
+CREATE TABLE KStore (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER, aisle INTEGER);
+
+INSERT INTO KStore VALUES (1, "Foundation", 200, 15, 2);
+INSERT INTO KStore VALUES (2, "Primer", 250, 10, 4);
+INSERT INTO KStore VALUES (3, "Eyebrow Pencil", 100, 8, 5);
+INSERT INTO KStore VALUES (4, "Eyebrow Gel", 50, 10, 5);
+INSERT INTO KStore VALUES (5, "Concealer", 100, 12, 2);
+INSERT INTO KStore VALUES (6, "Setting Powder", 300, 17, 3);
+INSERT INTO KStore VALUES (7, "Cream Contour", 150, 12, 3);
+INSERT INTO KStore VALUES (8, "Bronzer", 120, 13, 3);
+INSERT INTO KStore VALUES (9, "Blush", 225, 10, 3);
+INSERT INTO KStore VALUES (10, "Mascara", 300, 13, 5);
+INSERT INTO KStore VALUES (11, "Lipgloss", 130, 8, 4);
+INSERT INTO KStore VALUES (12, "Lipstick", 220, 17, 4);
+INSERT INTO KStore VALUES (13, "Brushes", 200, 25, 5);
+INSERT INTO KStore VALUES (14, "Setting Spray", 100, 10, 3);
+INSERT INTO KStore VALUES (15, "Lashes", 75, 20, 5);
+
+-- Display data ordered by price
+
+SELECT * FROM Kstore ORDER BY price;
+
+-- What is the most expensive item in the store?
+
+SELECT MAX(price) as most_dollars_paid
+    FROM KStore;
