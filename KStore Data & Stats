@@ -26,3 +26,7 @@ SELECT * FROM Kstore ORDER BY price;
 
 SELECT MAX(price) as most_dollars_paid
     FROM KStore;
+
+-- What are the items less than $15 in order from least to greatest? 
+
+SELECT * FROM Kstore WHERE price < 15  ORDER BY price; 
